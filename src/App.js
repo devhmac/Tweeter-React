@@ -1,9 +1,7 @@
 import './App.css';
+import { Navigation } from './Navigation'
 
-const Navigation = () => {
 
-  return
-}
 
 const Profile = () => {
 
@@ -23,6 +21,7 @@ const Tweet = () => {
 function App() {
   return (
     <div className="App">
+      <Navigation />
 
     </div>
   );
