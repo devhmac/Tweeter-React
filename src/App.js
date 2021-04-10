@@ -1,14 +1,8 @@
 import './App.css';
-import { Navigation } from './Navigation'
-import { Profile } from './Profile'
-import { TweetForm } from './TweetFrom'
-import { Tweet } from './Tweet'
-
-
-
-
-
-
+import { Navigation } from './components/Navigation'
+import { Profile } from './components/Profile'
+import { TweetForm } from './components/TweetFrom'
+import { Tweet } from './components/Tweet'
 
 
 function App() {
