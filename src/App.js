@@ -5,8 +5,36 @@ import { Profile } from './components/Profile'
 import { TweetForm } from './components/TweetForm'
 import { Tweet } from './components/Tweet'
 
+const tweetsData = [
+  {
+    name: "Devin MacGillivray",
+    handle: '@Cadaei',
+    profile_image: "https://i.imgur.com/3GvwNBf.png",
+    text: "We're going to try to refactor this with react!!!!",
+    date: "a few seconds ago"
+
+  },
+  {
+    name: "Amy Bob",
+    handle: '@Assisi',
+    profile_image: "https://i.imgur.com/3GvwNBf.png",
+    text: "Wow cool dots",
+    date: "10 Days ago"
+
+  }
+]
 
 function App() {
+  const tweets = tweetsData.map(tweetData => {
+    return (<Tweet
+      name={tweetData.name}
+      handle={tweetData.handle}
+      profile_image={tweetData.profile_image}
+      text={tweetData.text}
+      date={tweetData.date}
+    />)
+  })
+
   return (
     <div className="App">
       <body>
@@ -15,7 +43,7 @@ function App() {
         <main className="container">
           <TweetForm />
           <section id="tweets-container">
-            <Tweet />
+            {tweets}
           </section>
         </main>
       </body>

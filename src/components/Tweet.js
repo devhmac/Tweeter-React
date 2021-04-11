@@ -1,25 +1,25 @@
 import './Tweet.css'
 
-export const Tweet = () => {
-
+export const Tweet = (props) => {
+  const { name, handle, text, profile_image, date } = props
   return (
-    <article class="tweet">
+    <article className="tweet">
       <header>
-        <div class="user">
-          <img src="https://i.imgur.com/3GvwNBf.png" alt="" />
-          <p>Rosalie Garuglieri</p>
+        <div className="user">
+          <img src={profile_image} alt="" />
+          <p>{name}</p>
         </div>
-        <h4>@MissGaruglieri</h4>
+        <h4>{handle}</h4>
       </header>
 
-      <p>We're going to try to refactor this with react!!!!</p>
+      <p>{text}</p>
 
       <footer>
-        <span>a few seconds ago</span>
+        <span>{date}</span>
         <div>
-          <i class="fas fa-flag" aria-hidden="true"></i>
-          <i class="fas fa-retweet" aria-hidden="true"></i>
-          <i class="fas fa-heart" aria-hidden="true"></i>
+          <i className="fas fa-flag" aria-hidden="true"></i>
+          <i className="fas fa-retweet" aria-hidden="true"></i>
+          <i className="fas fa-heart" aria-hidden="true"></i>
         </div>
       </footer>
     </article>

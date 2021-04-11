@@ -5,7 +5,7 @@ export const Profile = () => {
   return (
     <header>
       <div>
-        <img src="../images/profile-hex.png" />
+        <img src="profile-hex.png" />
       </div>
       <br />
       <div>
