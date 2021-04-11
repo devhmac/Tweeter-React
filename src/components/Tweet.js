@@ -1,3 +1,5 @@
+import './Tweet.css'
+
 export const Tweet = () => {
 
   return (

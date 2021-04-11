@@ -1,3 +1,5 @@
+import './TweetForm.css'
+
 export const TweetForm = () => {
 
   return (
